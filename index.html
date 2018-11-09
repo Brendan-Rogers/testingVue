@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+	<title>Vue JS</title>
+</head>
+<body>
+
+<main id="app">
+
+<h3> {{ message }} Enjoy learning this whole new thing lmao</h3>
+
+<ul>
+	<li v-for="fruit in deliciousFruit">
+		<p v-on:click="logFruit"> {{ fruit.name }} is {{ fruit.flavor }} </p>
+	</li>
+</ul>
+
+<a :class="{ 'no-decorate' : anchorOff }" :href="targetURL" target="_blank"> VISIT GOOGLE </a>
+
+<p v-if="hazVue">
+	{{ vuemessage }}
+</p>
+
+</main>
+
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
